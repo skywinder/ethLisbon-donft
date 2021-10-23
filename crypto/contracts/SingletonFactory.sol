@@ -14,7 +14,7 @@ contract SingletonFactory {
      * @return createdContract Created contract address.
      */
     function deploy(bytes memory _initCode, bytes32 _salt)
-        public
+        internal
         returns (address payable createdContract)
     {
         assembly {
