@@ -20,7 +20,5 @@ interface IMutantMutations {
 
     function getMutation(MutationType mutationType) external view returns (Mutation memory);
 
-    function getOwner() external view returns (address);
-
     function getMutationsTypes() external pure returns (MutationType[] memory);
 }
