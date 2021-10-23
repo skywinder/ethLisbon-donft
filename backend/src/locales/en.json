@@ -1,0 +1,28 @@
+{
+  "message": {
+    "home": {
+      "compLing": "Computational Linguistics",
+      "link": "https://www.hse.ru/en/ma/ling/",
+      "headline": "Welcome to the ChukchiType Project!",
+      "heroText": "Char2SymVec is a project by a group of {0} student in Higher School of Economics dedicated to research the low resourced Chukchi language.\nWe aimed to make a neural network language model for the Chukchi language and for that we had to solve the problem of creating emmbedings having only a small dataset of Chukchi texts.",
+      "learnMore": "Learn more"
+    },
+    "nav": {
+      "home": "Home",
+      "try": "Try",
+      "repo": "Repository",
+      "changeLang": "RU"
+    },
+    "try": {
+      "instructions": "Here you can try out our model. If you type some Chukchi words or morphemes into this field,\n      you will be suggested a few typing hints. You can click on suggestions to append them to the end of your text.",
+      "placeholder": "Type in Chukchi here",
+      "getSuggestions": "Get suggestions"
+    },
+    "research": {
+      "headline": "Tensor Product Representation In Service of low-resource polysynthetic languages",
+      "authors": "Greg Arshinov, Daria Samsonova, Sergey Kosyak, Mikhail Voronov",
+      "body": "Polysynthetic low-resource languages are poorly treated with standard language modeling approaches. In this paper a hypothesis that word-segment embeddings based on tensor product of representations show better performance for low-resource languages compared to conventional word- and char-based models is tested. In order to prove it a pipeline that allows to process low-resource polysynthetic languages was developed. Using Neural Sequence Labeling Toolkit \\parencite{yang2018ncrf} to train a segmenter on a Chukchi corpus, a raw Chuckchi corpus was segmented and the \\textit{iiksiin} \\parencite{iiksiin} model was employed to create the embeddings. After that we tested them on the language modelling task and evaluated the results, which showed a notable increase in performance compared to regular approaches.",
+      "read": "Read the article"
+    }
+  }
+}
