@@ -15,8 +15,12 @@ contract Mutant is IMutantOwnable, IMutantMutations, IMutantProxy {
     mapping(MutationType => Mutation) public _mutationsByTypes;
     mapping(bytes32 => MutationType) public _typesByMutationsIds;
 
+    error NotTokenOwner();
+    error ExistingMutation();
+    error UnexistingMutation();
+
     modifier onlyOwner() {
-        require(msg.sender != getOwner(), "Only token owner can call this function");
+        if (msg.sender != getOwner()) revert NotTokenOwner();
         _;
     }
 
@@ -92,17 +96,11 @@ contract Mutant is IMutantOwnable, IMutantMutations, IMutantProxy {
     }
 
     function _requireNewMutation(Mutation memory a, Mutation memory b) internal pure {
-        require(
-            _mutationId(a) != _mutationId(b),
-            "Existing mutation"
-        );
+        if (_mutationId(a) == _mutationId(b)) revert ExistingMutation();
     }
 
     function _requireExistingMutation(Mutation memory m) internal pure {
-        require(
-            m.token != address(0x00),
-            "Unexisting mutation"
-        );
+        if (m.token == address(0x00)) revert UnexistingMutation();
     }
 
     function _mutationId(Mutation memory m) internal pure returns (bytes32) {

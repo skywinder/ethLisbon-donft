@@ -45,7 +45,7 @@ describe("Mutants", function () {
     await images.connect(charlie).approve(mutantAddress, backgroundTokenId);
 
     // Mutate with background
-    await mutant.mutate(backgroundType, images.address, backgroundTokenId);
+    await mutant.connect(bob).mutate(backgroundType, images.address, backgroundTokenId);
     assert.equal(await images.ownerOf(backgroundTokenId), mutantAddress);
   })
 })
