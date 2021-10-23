@@ -1,13 +1,13 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
-import "./interfaces/IMutant.sol";
+import "./interfaces/IMutantMutations.sol";
 import "./interfaces/IMutantProxy.sol";
 import "hardhat/console.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
 
-contract Mutant is IMutant, IMutantProxy {
+contract Mutant is IMutantMutations, IMutantProxy {
     IERC721 public immutable _token;
     uint256 public immutable _tokenId;
 

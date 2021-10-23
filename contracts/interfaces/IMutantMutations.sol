@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "../structs/MutantStructs.sol";
 
-interface IMutant {
+interface IMutantMutations {
     event NewMutation (
         MutationType indexed mutationType,
         address indexed token,
