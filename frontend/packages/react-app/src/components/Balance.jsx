@@ -55,9 +55,9 @@ export default function Balance(props) {
 
   let displayBalance = floatBalance.toFixed(4);
 
-  const price = props.price || props.dollarMultiplier || 1;
+  const price = props.price || props.dollarMultiplier;
 
-  if (dollarMode) {
+  if (price && dollarMode) {
     displayBalance = "$" + (floatBalance * price).toFixed(2);
   }
 

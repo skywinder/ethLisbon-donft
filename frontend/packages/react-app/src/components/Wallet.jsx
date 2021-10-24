@@ -59,7 +59,7 @@ export default function Wallet(props) {
   const [toAddress, setToAddress] = useState();
   const [pk, setPK] = useState();
 
-  const providerSend = props.provider ? (
+  const providerSend = props.signer ? (
     <Tooltip title="Wallet">
       <WalletOutlined
         onClick={() => {
