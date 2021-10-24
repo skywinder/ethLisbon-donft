@@ -24,6 +24,9 @@ How to use Flask
 ## What's next for DO[NFT] - Dynamic Ownable NFT Collection
 We will try to release our project in mainnet Polygon and start to attract NFT creators
 
+![photo_2021-10-24 12 26 43](https://user-images.githubusercontent.com/3356474/138594816-e400bd00-391c-4426-ae52-551afbce3700.jpeg)
+![photo_2021-10-24 12 26 41](https://user-images.githubusercontent.com/3356474/138594817-b59610f3-17dc-46f2-83eb-b585e90adad1.jpeg)
+![photo_2021-10-24 12 26 40](https://user-images.githubusercontent.com/3356474/138594818-1be084bd-dc9f-454f-bc33-43f4ff0a838c.jpeg)
 
 
 ![output-4 gif](https://user-images.githubusercontent.com/3356474/138591977-1e03c2ef-ab06-44b4-bb3e-5e6f1962a257.gif)
