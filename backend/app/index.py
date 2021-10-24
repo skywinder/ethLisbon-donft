@@ -31,12 +31,13 @@ def process_files(origianlUrl, modificatorUrl):
 #/dns/ipfs-api.example.com/tcp/443/https
     ipfs_url = "/dns4/ipfs.infura.io/tcp/5001/https"
     #"/dns/ipfs.io/tcp/443/https"
-    client = ipfshttpclient.connect(ipfs_url)
-    res = client.add(result_file_name)
+   # client = ipfshttpclient.connect(ipfs_url)
+    #res = client.add(result_file_name)
 
 # save to ipfs
 
-    return ipfs_url + res['Hash']
+    #return ipfs_url + res['Hash']
+    return ipfs_url
 
     
 if __name__ == "__main__":
