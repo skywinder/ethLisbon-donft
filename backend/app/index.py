@@ -28,8 +28,9 @@ def process_files(origianlUrl, modificatorUrl):
 # launch ml
    # os.popen("/home/dariasamsonova/first-order-model/Demo.py --config /home/dariasamsonova/first-order-model/config/vox-256.yaml --checkpoint /home/dariasamsonova/first-order-model/vox-cpk.pth.tar --source_image /home/dariasamsonova/backend/origianl.jpg --driving_video /home/dariasamsonova/backend/modificator.mp4 --result_video /home/dariasamsonova/backend/result.mp4 --cpu")
 # read file
-
-    ipfs_url = "https://ipfs.io/ipfs/"
+#/dns/ipfs-api.example.com/tcp/443/https
+    ipfs_url = "/dns4/ipfs.infura.io/tcp/5001/https"
+    #"/dns/ipfs.io/tcp/443/https"
     client = ipfshttpclient.connect(ipfs_url)
     res = client.add(result_file_name)
 

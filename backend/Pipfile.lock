@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cf846d19e7ad16f8430aa0771e8ecb47fa6383437c19876a38a428994a6581aa"
+            "sha256": "24b7a043e56269b766eb6b6c473ae723ae578ea75562702f09da9522e8845db5"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -65,11 +65,11 @@
         },
         "ipfshttpclient": {
             "hashes": [
-                "sha256:161c348e91cdc194c06c8725446a51a2d758ff2cc5ea97ec98f49e2af2465405",
-                "sha256:feb1033c14c3ac87ee81264176c5beefeaf386385804427160466117ccc43693"
+                "sha256:9abc46e43e573e0e25544689bc2f264b3183de1dfcf9186d349213c164ce8216",
+                "sha256:fb2b12b249dd45c4110b946a16c03ec1eeba6789791bd425e678d93c3f631098"
             ],
             "index": "pypi",
-            "version": "==0.7.0"
+            "version": "==0.6.1"
         },
         "itsdangerous": {
             "hashes": [
